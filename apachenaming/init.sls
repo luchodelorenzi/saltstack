@@ -7,10 +7,10 @@
 apache-pkg:
   pkg:
     - installed
-    - name: {{ apache }} 
+    - name: apache2
   service:
     - running 
-    - name: {{ apache }}
+    - name: apache2
     - require:
       - pkg: apache-pkg
       
