@@ -1,0 +1,18 @@
+<!-- 
+Name: index.html.jinja
+Description: Basic HTML to provide basic webpage
+-->
+
+{% set host = salt['grains.get']('host') -%}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Custom HTML provided by {{ host }}</title>
+<body>
+<h1>Apache2 is installed successfully using SaltStack Config</h1>
+<p>The host information below was pulled from a salt grain. This is being served from:</p>
+ 
+<h2>{{ host }}</h2>
+<p>Configured by Sam Akroyd @ www.samakroyd.com - Edited by Lucho Delorenzi @ www.luchodelorenzi.com</p>
+</body>
+</html>
