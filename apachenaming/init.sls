@@ -1,16 +1,16 @@
 
 ######################################################
-# install apache webserver, start service, changePage
+# install apache webserver in centos, start service, changePage
 # 
 ###################################################### 
 #install apache
 apache-pkg:
   pkg:
     - installed
-    - name: apache2
+    - name: httpd
   service:
     - running 
-    - name: apache2
+    - name: httpd
     - require:
       - pkg: apache-pkg
       
