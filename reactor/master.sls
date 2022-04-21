@@ -4,7 +4,7 @@
 copy_reactor:
   file.managed:
     - name: /etc/salt/master.d/reactor.conf
-    - source: salt://reactor/reactor.conf
+    - source: salt://reactor/files/reactor.conf
 
 restart_master:
   service.running:
