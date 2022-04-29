@@ -17,7 +17,7 @@ apache-pkg:
 #change page
 change_page:
   cmd.run:
-    - name: sed -i 's/Apache HTTP Server Test Page/LuchoDelorenzi/g' /usr/share/httpd/noindex/index.html
+    - name: sed -i 's/Apache HTTP Server Test Page/hostname/g' /usr/share/httpd/noindex/index.html
     - require:
       - apache-pkg
       
